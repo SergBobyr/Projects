@@ -10,6 +10,8 @@
   </div>
 
   <hr>
+  <p *ngIf="error; else todosBlock" class="error">{{error}}</p>
+  <ng-template #todosBlock>
 
   <div *ngIf="!loading; else loadingBlock">
     <div *ngIf="todos.length; else noTodos">
@@ -31,5 +33,5 @@
   <ng-template #loadingBlock>
     <p>Загрузка...</p>
   </ng-template>
-
+  </ng-template>
 </div>
