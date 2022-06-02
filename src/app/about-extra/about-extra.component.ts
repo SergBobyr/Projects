@@ -1,15 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core'
 
 @Component({
   selector: 'app-about-extra',
   templateUrl: './about-extra.component.html',
   styleUrls: ['./about-extra.component.scss']
 })
-export class AboutExtraComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class AboutExtraComponent {
 }
