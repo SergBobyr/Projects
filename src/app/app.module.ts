@@ -7,13 +7,17 @@ import {FormsModule} from "@angular/forms";
 import {PostsComponent} from "./posts/posts.component";
 import { RoutingComponent } from './routing/routing.component';
 import {RouterModule} from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ColorDirective } from './directives/color.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
     PostsComponent,
-    RoutingComponent
+    RoutingComponent,
+    NavbarComponent,
+    ColorDirective
   ],
   imports: [
     BrowserModule,
